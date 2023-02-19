@@ -44,6 +44,7 @@
                DISPLAY "Counter value is ", COUNTER
            END-PERFORM.
 
+           *> 外部プログラムを呼び出す
            CALL "ADD" USING XYZ.
            DISPLAY X " + " Y " = " Z.
 
