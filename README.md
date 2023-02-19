@@ -1,4 +1,4 @@
 # startup-cobol
 
-🪱🪱🪱 Fortranプログラムのサンプル。  
+🪱🪱🪱 Cobolプログラムのサンプル。  
 Docker上で動作させます。  
