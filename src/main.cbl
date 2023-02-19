@@ -8,6 +8,7 @@
 
            PROCEDURE DIVISION.
 
+           *> 標準出力
            DISPLAY "Hello, World!".
            DISPLAY "A = " A.
            DISPLAY "B = " B.
