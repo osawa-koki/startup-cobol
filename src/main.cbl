@@ -9,6 +9,10 @@
            01 NUM PIC 9(4).
            01 COUNTER PIC 9(4) VALUE 0.
 
+           01 X PIC 9(4) VALUE 5.
+           01 Y PIC 9(4) VALUE 10.
+           01 Z PIC 9(4).
+
            PROCEDURE DIVISION.
 
            *> 標準出力
@@ -39,4 +43,9 @@
                DISPLAY "Counter value is ", COUNTER
            END-PERFORM.
 
+           COPY "src/utils.cbl".
+           PERFORM ADD-FUNCTION.
+           DISPLAY "The result is ", Z.
+
            STOP RUN.
+           END PROGRAM HELLO-WORLD.
