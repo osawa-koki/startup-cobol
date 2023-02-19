@@ -24,4 +24,12 @@
            ACCEPT NUM.
            DISPLAY "Input number is " NUM.
 
+           *> 偶数か奇数か判定
+           IF FUNCTION MOD(NUM, 2) = 0
+               THEN
+               DISPLAY "Even number."
+           ELSE
+               DISPLAY "Odd number."
+           END-IF.
+
            STOP RUN.
