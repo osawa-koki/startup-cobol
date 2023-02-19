@@ -1,2 +1,2 @@
-FROM ubuntu
-RUN RUN apt update && apt install open-cobol -y
+FROM ubuntu:22.04
+RUN apt update && apt install gnucobol4 -y
