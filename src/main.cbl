@@ -21,7 +21,8 @@
                  03 Z PIC 9(4).
 
            01 LANGUAGES OCCURS 5 TIMES.
-           05 LANGUAGE-NAME PIC X(20).
+              03 LANGUAGE-NAME PIC X(20).
+           01 LANGUAGE-COUNTER PIC 9(3) VALUE 0.
 
            *> ===== ======================= ===== <*
            *> ======== PROCEDURE SECTION ======== <*
@@ -59,6 +60,19 @@
            *> 外部プログラムを呼び出す
            CALL "ADD" USING XYZ.
            DISPLAY X " + " Y " = " Z.
+
+           MOVE "Fortran" TO LANGUAGE-NAME(1).
+           MOVE "COBOL" TO LANGUAGE-NAME(2).
+           MOVE "BASIC" TO LANGUAGE-NAME(3).
+           MOVE "ALGOL" TO LANGUAGE-NAME(4).
+           MOVE "PL/I" TO LANGUAGE-NAME(5).
+
+           DISPLAY "Languages: "
+           PERFORM VARYING LANGUAGE-COUNTER
+              FROM 1 BY 1 UNTIL LANGUAGE-COUNTER > 5
+                 DISPLAY LANGUAGE-COUNTER, ". ", LANGUAGE-NAME
+                 (LANGUAGE-COUNTER)
+           END-PERFORM.
 
            STOP RUN.
            END PROGRAM HELLO-WORLD.
