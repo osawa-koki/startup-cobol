@@ -9,9 +9,10 @@
            01 NUM PIC 9(4).
            01 COUNTER PIC 9(4) VALUE 0.
 
-           01 X PIC 9(4) VALUE 5.
-           01 Y PIC 9(4) VALUE 10.
-           01 Z PIC 9(4).
+           01 XYZ.
+                 03 X PIC 9(4) VALUE 5.
+                 03 Y PIC 9(4) VALUE 10.
+                 03 Z PIC 9(4).
 
            PROCEDURE DIVISION.
 
@@ -43,9 +44,8 @@
                DISPLAY "Counter value is ", COUNTER
            END-PERFORM.
 
-           COPY "src/utils.cbl".
-           PERFORM ADD-FUNCTION.
-           DISPLAY "The result is ", Z.
+           CALL "ADD" USING XYZ.
+           DISPLAY X " + " Y " = " Z.
 
            STOP RUN.
            END PROGRAM HELLO-WORLD.

@@ -1,12 +1,15 @@
            IDENTIFICATION DIVISION.
-           PROGRAM-ID. UTILS.
+           PROGRAM-ID. ADD.
 
            DATA DIVISION.
-           WORKING-STORAGE SECTION.
-           01 X PIC 9(4).
-           01 Y PIC 9(4).
-           01 Z PIC 9(4).
+           LINKAGE SECTION.
+           01 XYZ.
+                 03 X PIC 9(4).
+                 03 Y PIC 9(4).
+                 03 Z PIC 9(4).
 
-           PROCEDURE DIVISION.
-           ADD-FUNCTION.
-               COMPUTE Z = X + Y.
+           PROCEDURE DIVISION USING XYZ.
+
+           COMPUTE Z = X + Y.
+
+           END PROGRAM ADD.
