@@ -1,6 +1,12 @@
+           *> ===== ======================= ===== <*
+           *> ===== IDENTIFICATION DIVISION ===== <*
+           *> ===== ======================= ===== <*
            IDENTIFICATION DIVISION.
            PROGRAM-ID. HELLO-WORLD.
 
+           *> ===== ======================= ===== <*
+           *> ========== DATA DIVISION ========== <*
+           *> ===== ======================= ===== <*
            DATA DIVISION.
            WORKING-STORAGE SECTION.
            01 A PIC 9(4) VALUE 100.
@@ -14,6 +20,12 @@
                  03 Y PIC 9(4) VALUE 10.
                  03 Z PIC 9(4).
 
+           01 LANGUAGES OCCURS 5 TIMES.
+           05 LANGUAGE-NAME PIC X(20).
+
+           *> ===== ======================= ===== <*
+           *> ======== PROCEDURE SECTION ======== <*
+           *> ===== ======================= ===== <*
            PROCEDURE DIVISION.
 
            *> 標準出力
