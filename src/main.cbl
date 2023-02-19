@@ -7,6 +7,7 @@
            01 B PIC 9(4) VALUE 200.
 
            01 NUM PIC 9(4).
+           01 COUNTER PIC 9(4) VALUE 0.
 
            PROCEDURE DIVISION.
 
@@ -31,5 +32,11 @@
            ELSE
                DISPLAY "Odd number."
            END-IF.
+
+           *> 指定した回数繰り返す
+           PERFORM UNTIL COUNTER = NUM
+               ADD 1 TO COUNTER
+               DISPLAY "Counter value is ", COUNTER
+           END-PERFORM.
 
            STOP RUN.
