@@ -12,4 +12,8 @@
            DISPLAY "A = " A.
            DISPLAY "B = " B.
 
+           *> 和を計算して表示
+           ADD A TO B
+           DISPLAY "A + B = " B.
+
            STOP RUN.
