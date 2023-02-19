@@ -1,9 +1,8 @@
            IDENTIFICATION DIVISION.
            PROGRAM-ID. HELLO-WORLD.
-           AUTHOR. osawa-koki
 
            PROCEDURE DIVISION.
 
-           DISPLAY "Hello, World!".
+                 DISPLAY "Hello, World!".
 
-           STOP RUN.
+                 STOP RUN.
