@@ -54,7 +54,7 @@
            *> 指定した回数繰り返す
            PERFORM UNTIL COUNTER = NUM
                ADD 1 TO COUNTER
-               DISPLAY "Counter value is ", COUNTER
+               DISPLAY "Counter value is ", COUNTER, ".".
            END-PERFORM.
 
            *> 外部プログラムを呼び出す
