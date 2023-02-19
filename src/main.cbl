@@ -2,7 +2,7 @@
            *> ===== IDENTIFICATION DIVISION ===== <*
            *> ===== ======================= ===== <*
            IDENTIFICATION DIVISION.
-           PROGRAM-ID. HELLO-WORLD.
+           PROGRAM-ID. MAIN.
 
            *> ===== ======================= ===== <*
            *> ========== DATA DIVISION ========== <*
@@ -54,7 +54,7 @@
            *> 指定した回数繰り返す
            PERFORM UNTIL COUNTER = NUM
                ADD 1 TO COUNTER
-               DISPLAY "Counter value is ", COUNTER, ".".
+               DISPLAY "Counter value is ", COUNTER, "."
            END-PERFORM.
 
            *> 外部プログラムを呼び出す
@@ -75,4 +75,4 @@
            END-PERFORM.
 
            STOP RUN.
-           END PROGRAM HELLO-WORLD.
+           END PROGRAM MAIN.
