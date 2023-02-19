@@ -12,8 +12,7 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 
 [*.cbl]
-indent_style = space
-indent_size = 7
+indent_size = off
 
 [Dockerfile]
 indent_size = 4
