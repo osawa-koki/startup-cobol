@@ -67,6 +67,7 @@
            MOVE "ALGOL" TO LANGUAGE-NAME(4).
            MOVE "PL/I" TO LANGUAGE-NAME(5).
 
+           *> 配列のループ
            DISPLAY "Languages: "
            PERFORM VARYING LANGUAGE-COUNTER
               FROM 1 BY 1 UNTIL LANGUAGE-COUNTER > 5
